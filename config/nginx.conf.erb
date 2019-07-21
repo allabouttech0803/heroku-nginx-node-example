@@ -32,7 +32,7 @@ http {
 
 	server {
 		listen <%= ENV["PORT"] %>;
-		server_name universe-rest-api.com;
+		server_name _;
 		keepalive_timeout 5;
     return 301 https://$server_name$request_uri;
 
